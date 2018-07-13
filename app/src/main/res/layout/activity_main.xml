@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="bakeapp.rako.paginglibrary_example.MainActivity">
+
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/btn1"
+        app:layout_constraintRight_toLeftOf="@id/btn2"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="btn1"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:layout_width="0dp"
+        android:id="@+id/btn2"
+        app:layout_constraintLeft_toRightOf="@id/btn1"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="btn2"
+        android:layout_height="wrap_content" />
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/btn1"/>
+
+
+</android.support.constraint.ConstraintLayout>
